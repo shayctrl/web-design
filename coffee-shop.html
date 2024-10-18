@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+    <style>
+        /*
+    CSS RESET - * will target all the elements inside the HTML document
+        */
+    *{
+        margin: 0;
+        padding: 0%;
+    }
+
+    body {
+        font-family:'Times New Roman', Times, serif;
+        line-height: 1.5;
+    }
+
+   header { 
+    background-color: #40280fa2;
+    color: #faebd7;
+    padding: 20px;
+    text-align: center;
+   }
+
+   nav {
+    background-color: #faebd7;
+    padding: 15px;
+    display: flex;
+    justify-content: space-around;
+   }
+
+   /*
+    Hierarchy is targeted using the element neames seperated with spaces
+    */
+  nav a {
+    color: #40280fa2;
+    text-decoration: none;
+    font-weight: bold;
+   }
+    main {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    /*
+    CLASSES are targeted using a dot (.) followed by the name
+    */
+   .box {
+    border-width: 1px;
+    border-color: #40280fa2;
+    border-style: solid;
+    padding: 20px;
+    margin-bottom: 20px;
+   }
+
+   .highlight {
+    background-color: #efd3b792;
+    border-color: #faebd7;
+   }
+    </style>
+</head>
+<body>
+    <!-- website header-->
+     <header>
+        <h1> Welcome to Our Coffee Shop </h1>
+     </header>
+     <!--Website Navigation-->
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Menu</a>
+        <a href="#">About Us</a>
+        <a href="#">Contact</a>
+    </nav>
+     
+    <!-- Website Content-->
+     <main>
+
+       <!--Welcome Box-->
+       <div class="box highlight">
+        <h2> Our Story</h2>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, nobis! Molestiae recusandae debitis cum esse molestias ducimus cupiditate nihil. Iure quas perspiciatis saepe eos reiciendis adipisci odit quibusdam fuga mollitia.</p>
+       </div>
+       <!--Featured Items Box-->
+       <div class="box">
+        <h2> Featured Items </h2>
+
+        <ul>
+            <li>Espresso - &euro;1.50</li>
+            <li>Latte - &euro;3.50</li>
+            <li>Capuccino - &euro;2.50</li>
+            <li>Macchiato - &euro;3.00</li>
+        </ul>
+       </div>
+       <!--Location Box-->
+     <div class="box">
+        <h2> Location </h2>
+        <p> 124, Myple Town, USA </p>
+     </div>
+     </main>
+</body>
+</html>
