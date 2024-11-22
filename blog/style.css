@@ -27,6 +27,9 @@ body {
     height: 100vh; /* viewport/window height */
     
     display: flex;
+
+    z-index: 1100; /* puts intro in front of navbar */
+    position: relative;
 }
 
 .intro-container {
@@ -173,4 +176,50 @@ body {
     width: 100%;
     text-align: right;
     margin-top: 50px;
+}
+
+/******************* NAVIGATION *******************/
+.navbar {
+
+    background-color: #fff;
+
+    border-color:#eee;
+    border-style: solid;
+    border-bottom-width: 1px;
+
+    position: fixed;
+    top:0%;
+    left:0%;
+    z-index: 1000;
+
+    width: 100%;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+}
+
+.nav-link {
+    /* Padding on top/bottom/left/right */
+    padding: 30px 20px;
+}
+
+.navbar-brand {
+    font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em; /* 150% of the font size */
+    font-weight: bold;
+    
+    align-content: center;
 }
