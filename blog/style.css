@@ -8,12 +8,22 @@
 /******************* GENERIC ELEMENTS *******************/
 body {
     background-color: #fafafa;
-    
+
     font-family: Montserrat, Arial, sans-serif;
-    
+
     line-height: 1.6;
-    
+
     min-height: 200vh;
+}
+
+hr {
+    border: none;
+    /* Values: Width/Size Style Color */
+    border-bottom: 1px solid #ccc;
+
+    /* !important will not get replaced */
+    margin-top: 50px !important;
+    margin-bottom: 50px !important;
 }
 
 /******************* INTRO *******************/
@@ -22,13 +32,17 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+
     width: 100vw; /* viewport/window width */
+    width: auto;
+    /* quick hack to reduce scrolling */
+
     height: 100vh; /* viewport/window height */
-    
+
     display: flex;
 
-    z-index: 1100; /* puts intro in front of navbar */
+    /* puts the intro in front of the navbar */
+    z-index: 1100;
     position: relative;
 }
 
@@ -40,21 +54,21 @@ body {
 .intro-container {
     background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    
+
     /* properties: X Y Size Color */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    
+
     width: 25%;
     padding: 20px;
     margin: auto;
-    
+
     text-align: center;
 }
 
 .intro h1 {
     text-transform: uppercase;
     font-weight: normal;
-    
+
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
@@ -66,7 +80,7 @@ body {
 /******************* CARD *******************/
 .card {
     display: block;
-    
+
     color: #000;
     text-decoration: none;
 }
@@ -78,11 +92,11 @@ body {
 
 .card img {
     display: block;
-    
+
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
+
     transition-property: transform;
     transition-duration: 1s;
     transition-timing-function: ease-out;
@@ -97,16 +111,20 @@ body {
 
 .card:hover img {
     transform: scale(1.2);
-    
+
     transition-duration: 10s;
     transition-timing-function: linear;
 }
 
 /******************* WEBSITE CONTAINER *******************/
-
 .container {
     max-width: 1280px;
     /* pushes all content to the middle */
+    margin: auto;
+}
+
+.content-narrow {
+    max-width: 640px;
     margin: auto;
 }
 
@@ -114,15 +132,20 @@ body {
 .row {
     display: flex;
     /* if the content doesn't fit the line,
-    move it to the next line */
+        move it to the next line */
     flex-wrap: wrap;
     gap: 50px;
 }
 
-/* Targets class ="card" inside class="row" */
+/* Targets class="card" inside class="row" */
+.one-column .card {
+    width: 100%;
+}
+
 .two-columns .card {
     width: calc((100% - 50px) / 2);
 }
+
 .three-columns .card {
     width: calc((100% - 100px) / 3);
 }
@@ -137,10 +160,12 @@ body {
     text-transform: uppercase;
     letter-spacing: 2px;
 
-    /* changes the transformation anchor point to the top left */
+    /* changes the transformation anchor point
+        to the top left */
     transform-origin: 0 0;
     transform: rotate(90deg) translateY(5px);
 
+    /* disconnect the h3 from the content */
     position: absolute;
 }
 
@@ -168,7 +193,7 @@ body {
     margin-left: auto;
 }
 
-.website-footer .footer-items {
+.website-footer .footer-item {
     margin-bottom: 10px;
 }
 
@@ -185,16 +210,16 @@ body {
 
 /******************* NAVIGATION *******************/
 .navbar {
-
     background-color: #fff;
 
-    border-color:#eee;
+    border-color: #eee;
     border-style: solid;
+    border-width: 0;
     border-bottom-width: 1px;
 
     position: fixed;
-    top:0%;
-    left:0%;
+    top: 0;
+    left: 0;
     z-index: 1000;
 
     width: 100%;
@@ -217,14 +242,87 @@ body {
 }
 
 .nav-link {
-    /* Padding on top/bottom/left/right */
+    /* Padding on top/bottom left/right */
     padding: 30px 20px;
 }
 
 .navbar-brand {
-    font-family: Eczar, Georgia, 'Times New Roman', Times, serif;
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5em; /* 150% of the font size */
     font-weight: bold;
-    
+
     align-content: center;
+}
+
+/******************* STORY *******************/
+.story-header h1 {
+    /* twice the current font size */
+    font-size: 2em;
+    margin-bottom: 25px;
+}
+
+.story-header p {
+    font-size: 1.5em;
+    font-style: italic;
+    font-family: Cardo, Georgia, 'Times New Roman', Times, serif;
+
+    line-height: 1.2;
+}
+
+.story-header .byline {
+    margin-top: 10px;
+}
+
+/* Targets everything inside class="byline" */
+.story-header .byline * {
+    display: inline;
+    font-style: normal;
+}
+
+/* A comma can be used to add CSS to
+    multiple elements */
+.story-content p, .story-content .row {
+    margin-bottom: 50px;
+}
+
+.story-footer {
+    background-color: #e3e3e3;
+    padding: 100px 50px;
+    margin: 50px auto;
+}
+.story-footer p {
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+}
+
+.social-link {
+    background-color: #eee;
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    transition-property: background-color;
+    transition-duration: 0.15s;
+}
+
+.social-link svg {
+    display: block;
+    font-size: 30px;
+
+    width: 1em;
+    height: 1em;
+    transition-property: fill;
+    transition-duration: 0.15s;
+}
+
+.social-link:hover {
+    background-color: #000;
+}
+
+.social-link:hover svg {
+    fill: #fff;
 }

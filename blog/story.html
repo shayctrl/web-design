@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
     <!-- links the css file to this page -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -22,22 +22,27 @@
             <a href="index.html" class="navbar-brand">
                 Fancy Blog
             </a>
-            
+
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#" class="nav-link">Featured Stories</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Featured Stories</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Shop</a>
+                </li>
             </ul>
+            
         </div>
     </nav>
     
     <!-- WEBSITE INTRO -->
-    <header class="intro intro-story">
-    </header>
-    
+    <header class="intro intro-story"></header>
     
     <!-- WEBSITE CONTAINER -->
-    <div class="container"> 
+    <div class="container">
         
         <!-- UNIQUE PAGE CONTENT -->
         <main class="main-content">
@@ -45,38 +50,108 @@
             <article class="story">
 
                 <!-- STORY HEADER -->
-                <header class="story-header">
+                <header class="story-header content-narrow">
 
-                    <h1> Leaves are Life</h1>
+                    <h1>Leaves are Life</h1>
 
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, porro laudantium perspiciatis excepturi alias esse ab autem dolorum doloribus quisquam eligendi harum deleniti debitis eos. Eius, mollitia! Quam, assumenda obcaecati!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sit architecto voluptate a. Vero dolores magnam ratione ex iste omnis asperiores eius voluptatum doloremque architecto perferendis alias reiciendis, id velit?</p>
 
                     <div class="byline">
-                        Written by 
-                        <address> Wayne Pitchcock </address>
+                        Written by
+                        <address>Ian Borg</address>
                         on
-                        <!-- Date Time Format : YYYY-MM-DD (T) HH:MM:SS -->
+                        <!-- Date Time format: YYYY-MM-DD(T)HH:MM:SS -->
                         <time datetime="2024-11-22T16:15:00">November 22, 2024</time>
                     </div>
 
                 </header>
+
+                <hr class="content-narrow">
+
                 <!-- STORY CONTENT -->
-                <section class="story-content"></section>
+                <section class="story-content">
+
+                    <p class="content-narrow">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, inventore alias itaque tenetur omnis nisi minima consequuntur exercitationem ipsum reprehenderit reiciendis voluptatem ad laboriosam. Perspiciatis dicta placeat nihil quas explicabo sed fugit autem repellat a voluptate recusandae animi quos possimus sunt esse atque quam commodi, at molestiae tempora ducimus? Perspiciatis.
+                    </p>
+
+                    <p class="content-narrow">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam dolorum itaque saepe vitae exercitationem quia unde ea id accusantium, labore fuga, quo temporibus est voluptas alias. Officiis adipisci possimus error!
+                    </p>
+
+                    <div class="row one-column">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/mountains.jpg" alt="Mountains">
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="content-narrow">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat assumenda voluptatem maiores, nemo illum temporibus debitis inventore soluta laboriosam corrupti.
+                    </p>
+
+                    <div class="row two-columns">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/mountains.jpg" alt="Mountains">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/fishing.jpg" alt="Mountains">
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="images/mountains.jpg" alt="Mountains">
+                            </div>
+                        </div>
+
+                        <p class="card">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente soluta officiis, quas explicabo dignissimos facilis quo doloremque illo incidunt optio.
+                        </p>
+                    </div>
+
+                </section>
+
                 <!-- STORY FOOTER -->
-                <footer class="story-footer"></footer>
+                <footer class="story-footer content-narrow">
+                    <p>
+                        If you enjoyed reading this story, then we'd love it if you would <strong> share it!</strong>
+                    </p>
+
+                    <div class="socials">
+                        <!-- Double // replaces http:// -->
+                        <a href="//google.com" class="social-link" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="color"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg>
+                        </a>
+                        <a href="//google.com" class="social-link" target="_blank">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="color"><title>X</title><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
+                        </a>
+                        <a href="//google.com" class="social-link" target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 24 24">
+                                <path d="M 18 2 A 3 3 0 0 0 15 5 A 3 3 0 0 0 15.054688 5.5605469 L 7.9394531 9.7109375 A 3 3 0 0 0 6 9 A 3 3 0 0 0 3 12 A 3 3 0 0 0 6 15 A 3 3 0 0 0 7.9355469 14.287109 L 15.054688 18.439453 A 3 3 0 0 0 15 19 A 3 3 0 0 0 18 22 A 3 3 0 0 0 21 19 A 3 3 0 0 0 18 16 A 3 3 0 0 0 16.0625 16.712891 L 8.9453125 12.560547 A 3 3 0 0 0 9 12 A 3 3 0 0 0 8.9453125 11.439453 L 16.060547 7.2890625 A 3 3 0 0 0 18 8 A 3 3 0 0 0 21 5 A 3 3 0 0 0 18 2 z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </footer>
 
             </article>
-
+            
         </main>
         
-        
     </div>
+    
     <!-- FOOTER -->
     <footer class="website-footer">
         
         <div class="container">
+            
             <p class="summary">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quis cupiditate obcaecati eos mollitia vitae at maiores voluptates dolores, quo sed consequatur et eligendi excepturi accusantium, modi expedita. Aliquid, ipsa?
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore reprehenderit voluptatem adipisci eum, exercitationem, iusto quasi rem et velit laboriosam quod vitae voluptatibus voluptate provident harum dignissimos dolorum placeat perspiciatis.
             </p>
             
             <ul class="footer-links">
@@ -101,7 +176,6 @@
         </div>
         
     </footer>
-    
     
 </body>
 </html>

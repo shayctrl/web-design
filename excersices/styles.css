@@ -1,0 +1,78 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #011657;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+}
+
+#hero {
+    text-align: center;
+    background: url('canteen-hero.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 50px 20px;
+}
+
+#hero button {
+    background: #011657;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#menu-preview {
+    padding: 20px;
+    background: #f4f4f4;
+}
+
+.menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-items .item {
+    text-align: center;
+    flex: 1;
+}
+
+.menu-items .item img {
+    width: 65%;
+}
+
+#hours {
+    padding: 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: white;
+}
