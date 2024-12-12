@@ -1,72 +1,35 @@
-body {
-    margin: 0;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Page</title>
+    <style>
+        /* General Page Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-    background-color: #ad6363;
-    color: #e4e2e2;
-}
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #444;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+        }
+        nav a:hover {
+            background-color: #777;
+            border-radius: 5px;
+        }
 
-.logo {
-    font-size: 1.5em;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-    margin: 0;
-    padding: 0;
-}
-
-.nav-links li {
-    display: inline;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #e5dbdb;
-    padding: 0.5em 1em;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-}
-
-.nav-links a:hover {
-    background-color: #575757;
-}
-
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 1.5em;
-    color: white;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        background-color: #333;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 0;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: block;
-    }
-}
+        /* Main Content Styling *
