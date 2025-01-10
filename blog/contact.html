@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Fancy Blog</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Eczar:wght@400..800&display=swap" rel="stylesheet">
+    
+    <!-- links the css file to this page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- WEBSITE NAVIGATION -->
+    <nav class="navbar">
+        <div class="container">
+            
+            <a href="index.html" class="navbar-brand">
+                Fancy Blog
+            </a>
+            
+            <ul class="navbar-nav">
+                <li class="nav-item"><a href="#" class="nav-link">Featured Stories</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Shop</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <!-- WEBSITE INTRO -->
+    <header class="intro intro-story">
+        
+    </header>
+    
+    
+    <!-- WEBSITE CONTAINER -->
+    <div class="container"> 
+        
+        <!-- UNIQUE PAGE CONTENT -->
+        <main class="main-content">
+            <section class="content-narrow">
+                <h2> Share Your Adventures</h2>
+                
+                <form action="mailto:info@website.com" method="post" enctype="text/plain">
+                    
+                    <div class="form-element"></div>
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Your Name & Surname" required>
+                    
+                    <div class="form-element"></div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" name="email" id="email" placeholder="your@email.com" required>
+                    
+                    <div class="form-element"></div>
+                    <label for="subject">Subject:</label>
+                    <select name="subject" id="subject">
+                        <option value="Share a Story">Share a Story</option>
+                        <option value="Karen">Shit</option>
+                    </select>
+                    <div class="form-element">
+                        <textarea name="message" id="message" rows="10" cols="50" placeholder="Your text goes here" midlenght="20" required></textarea>
+                    </div>
+                    
+                    <div class="form-element">
+                        <button type="submit">Send</button>
+                        <button type="reset">Reset</button>
+                    </div>
+                    
+                </form>
+            </section>
+        </main>
+        
+        
+    </div>
+    <!-- FOOTER -->
+    <footer class="website-footer">
+        
+        <div class="container">
+            <p class="summary">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quis cupiditate obcaecati eos mollitia vitae at maiores voluptates dolores, quo sed consequatur et eligendi excepturi accusantium, modi expedita. Aliquid, ipsa?
+            </p>
+            
+            <ul class="footer-links">
+                <li class="footer-item">
+                    <a href="#" class="footer-link">Home</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">Stories</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">About</a>
+                </li>
+                <li class="footer-item">
+                    <a href="#" class="footer-link">Shop</a>
+                </li>
+            </ul>
+            
+            <p class="copyright">
+                &copy; My Fancy Blog
+            </p>
+            
+        </div>
+        
+    </footer>
+    
+    
+</body>
+</html>

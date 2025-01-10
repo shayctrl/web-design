@@ -326,3 +326,32 @@ hr {
 .social-link:hover svg {
     fill: #fff;
 }
+
+/********************CONTENT FORM********************/
+form {
+    margin-bottom: 100px;
+    margin-top: 10px;
+}
+
+.form-element {
+    display: flex;
+    margin-bottom: 10px;
+}
+.form-element label {
+    width: 200px;
+}
+
+.form-element input {
+    font-family: Montserrat, Arial, sans-serif;
+
+    display: block;
+    flex: 1;
+
+    padding: 5px;
+}
+
+.form-element button {
+    flex: 0;
+    width: 100px;
+    margin-right: 10px;
+}

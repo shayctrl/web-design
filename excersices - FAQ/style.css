@@ -1,0 +1,10 @@
+footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%; /* Ensure the footer spans the full width of the screen */
+    margin: 0;   /* Remove any default margin */
+    left: 0;     /* Align the footer to the left edge */
+}
